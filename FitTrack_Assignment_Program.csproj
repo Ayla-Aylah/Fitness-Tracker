@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{475EEA14-FA3B-4491-B51C-A1BFA261597A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FitTrack_Assignment_Program</RootNamespace>
+    <AssemblyName>FitTrack_Assignment_Program</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adm_Class.cs" />
+    <Compile Include="Adm_HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adm_HomePage.Designer.cs">
+      <DependentUpon>Adm_HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adm_Login.Designer.cs">
+      <DependentUpon>Adm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FitTrack_DataSet.cs">
+      <DependentUpon>FitTrack_DataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmWelcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWelcome.Designer.cs">
+      <DependentUpon>frmWelcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mbr_Setup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mbr_Setup.Designer.cs">
+      <DependentUpon>Mbr_Setup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FitTrack_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FitTrack_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Adm_Setup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adm_Setup.Designer.cs">
+      <DependentUpon>Adm_Setup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mbr_Activity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mbr_Activity.Designer.cs">
+      <DependentUpon>Mbr_Activity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mbr_Goal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mbr_Goal.Designer.cs">
+      <DependentUpon>Mbr_Goal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mbr_HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mbr_HomePage.Designer.cs">
+      <DependentUpon>Mbr_HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mbr_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mbr_Login.Designer.cs">
+      <DependentUpon>Mbr_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mbr_Progress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mbr_Progress.Designer.cs">
+      <DependentUpon>Mbr_Progress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Adm_Setup.resx">
+      <DependentUpon>Adm_Setup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adm_HomePage.resx">
+      <DependentUpon>Adm_HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adm_Login.resx">
+      <DependentUpon>Adm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWelcome.resx">
+      <DependentUpon>frmWelcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mbr_Setup.resx">
+      <DependentUpon>Mbr_Setup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mbr_Activity.resx">
+      <DependentUpon>Mbr_Activity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mbr_Goal.resx">
+      <DependentUpon>Mbr_Goal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mbr_HomePage.resx">
+      <DependentUpon>Mbr_HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mbr_Login.resx">
+      <DependentUpon>Mbr_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mbr_Progress.resx">
+      <DependentUpon>Mbr_Progress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="FitTrack_DataSet.xsc">
+      <DependentUpon>FitTrack_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FitTrack_DataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FitTrack_DataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FitTrack_DataSet.xss">
+      <DependentUpon>FitTrack_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\fitness.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\upload photo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\pngwing.com%283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\3476059.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\stretching-exercise-3488535-2922390.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Goal-icon-by-back1design1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\5441859.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\1407238full.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\1000_F_503235338_3lk0M7aEmb7Wrlth1rkQjoIuRUJ6Z0DM.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
